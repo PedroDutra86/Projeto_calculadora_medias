@@ -1,6 +1,6 @@
 const form = document.getElementById('form-atividade')
-const imgAprovado = '<img  src="./imagens/Emojifeliz.png" alt="Emoji celebrando" />'
-const imgReprovado = '<img  src="./imagens/Emojitriste.png" alt="Emoji triste" />'
+const imgAprovado = '<img src="./imagens/Emojifeliz.png" alt="Emoji celebrando" />';
+const imgReprovado = '<img src="./imagens/Emojitriste.png" alt="Emoji triste" />';
 const atividades = [];
 const notas = [];
 const spanAprovado = '<span class="resultado aprovado">Aprovado </span>'
@@ -48,7 +48,7 @@ function atualizaTabela() {
 function atualizaMediaFinal() {
     const mediaFinal = calculaMediaFinal();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(1);
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
